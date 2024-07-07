@@ -4,10 +4,8 @@ body {
 
 header {
   .container {
-    width: 1164px;
-    margin: 0 auto;
-    // border: 2px solid #ff0000;
-    display: flex;
+    @include container // border: 2px solid #ff0000;
+      display: flex;
     gap: 35px;
     align-items: center;
     margin-top: 11px;
@@ -19,5 +17,125 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+  }
+}
+.sect1 {
+  .container {
+    @include container display: flex;
+    justify-content: space-between;
+  }
+  h2 {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 42px;
+    margin-left: 185px;
+    margin-bottom: 27px;
+  }
+  h3 {
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    margin-top: 32px;
+    margin-left: 41px;
+  }
+  .card1 {
+    width: 362px;
+    height: 171px;
+    background-color: white;
+  }
+  h4 {
+    color: #8a8787;
+    font-family: "Roboto";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 238px;
+    height: 36px;
+    padding-top: 68px;
+    padding-left: 38px;
+  }
+  .fa-clock {
+    display: inline-block;
+    padding-top: 50px;
+    padding-left: 40px;
+  }
+  h5 {
+    color: #8a8787;
+    font-family: "Roboto";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+  }
+}
+
+.container {
+  @include container h2 {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 57px;
+    margin-bottom: 30px;
+  }
+  .diva {
+    display: flex;
+    gap: 45px;
+  }
+  .div1 {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+  }
+  .div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 201px;
+  background-color: #243043;
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  .container {
+    @include container display: flex;
+    gap: 90px;
+    align-items: flex-start;
+  }
+  ol li {
+    color: #818687;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 16px;
+  }
+  a {
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .geolab {
+    margin-left: 330px;
   }
 }
